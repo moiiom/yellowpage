@@ -1,0 +1,2058 @@
+2016-08-04 21:17:10 [scrapy] INFO: Scrapy 1.1.0 started (bot: yellowpage)
+2016-08-04 21:17:10 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'yellowpage.spiders', 'DEPTH_LIMIT': 3, 'SPIDER_MODULES': ['yellowpage.spiders'], 'BOT_NAME': 'yellowpage', 'DOWNLOAD_TIMEOUT': 10, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 2}
+2016-08-04 21:17:10 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-08-04 21:17:10 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-08-04 21:17:10 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:4: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2016-08-04 21:17:10 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:5: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+2016-08-04 21:17:10 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:6: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.defaultheaders` is deprecated, use `scrapy.downloadermiddlewares.defaultheaders` instead
+  from scrapy.contrib.downloadermiddleware.defaultheaders import DefaultHeadersMiddleware
+
+2016-08-04 21:17:10 [scrapy] INFO: Enabled downloader middlewares:
+['yellowpage.middlewares.MyHttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'yellowpage.middlewares.MyUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-04 21:17:10 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-04 21:17:10 [scrapy] INFO: Enabled item pipelines:
+['yellowpage.pipelines.YellowPagePipeline']
+2016-08-04 21:17:10 [scrapy] INFO: Spider opened
+2016-08-04 21:17:10 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-04 21:17:10 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-08-04 21:17:10 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:34: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('start fetch proxy ips...', level=log.INFO)
+
+2016-08-04 21:17:10 [scrapy] INFO: start fetch proxy ips...
+2016-08-04 21:17:10 [yellowpage.fetch_free_proxyes] INFO: fetch proxy ip from kuaidaili...
+2016-08-04 21:18:58 [yellowpage.fetch_free_proxyes] INFO: fetch proxy ip from kxdaili...
+2016-08-04 21:19:00 [yellowpage.fetch_free_proxyes] INFO: fetch proxy ip from xici...
+2016-08-04 21:19:02 [yellowpage.fetch_free_proxyes] INFO: fetch proxy ip from ip181...
+2016-08-04 21:19:02 [yellowpage.fetch_free_proxyes] INFO: fetch proxy ip from 66ip...
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: checking proxyes validation,total:1733
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/33):202.171.253.72:80
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/50):202.171.253.72:80
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/50):202.171.253.72:80
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/50):202.171.253.72:80
+2016-08-04 21:19:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/50):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/33):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.171.253.72:80
+2016-08-04 21:19:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/33):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):45.62.246.212:8080
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/33):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/50):202.171.253.72:80
+2016-08-04 21:19:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/33):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/50):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/33):202.171.253.72:80
+2016-08-04 21:19:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.100.167.144:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/33):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/50):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/33):202.171.253.72:80
+2016-08-04 21:19:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(9/33):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(9/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/50):202.171.253.72:80
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-04 21:19:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/50):202.167.248.186:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(9/50):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/50):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/50):182.38.214.10:8888
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(9/50):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/33):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/50):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/50):202.171.253.72:80
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(11/33):202.171.253.72:80
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(11/50):202.171.253.72:80
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(11/50):202.171.253.72:80
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(12/33):202.171.253.72:80
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(12/50):202.171.253.72:80
+2016-08-04 21:19:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(12/50):202.171.253.72:80
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(13/33):202.171.253.72:80
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/50):39.67.92.84:81
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(13/50):202.171.253.72:80
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/33):202.171.253.72:80
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-04 21:19:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(15/33):202.171.253.72:80
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/50):202.171.253.72:80
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(16/33):202.171.253.72:80
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(15/50):202.171.253.72:80
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/33):202.171.253.72:80
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(16/50):202.171.253.72:80
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/33):202.171.253.72:80
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/50):202.171.253.72:80
+2016-08-04 21:19:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/33):202.171.253.72:80
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/50):202.171.253.72:80
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/50):202.171.253.72:80
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/33):202.171.253.72:80
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(15/50):202.171.253.72:80
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/50):202.171.253.72:80
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/33):202.171.253.72:80
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/50):202.171.253.72:80
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/33):202.171.253.72:80
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/50):202.171.253.72:80
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/33):202.171.253.72:80
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):202.171.253.72:80
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/33):202.171.253.72:80
+2016-08-04 21:19:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):101.201.235.141:8000
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/33):202.171.253.72:80
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):202.171.253.72:80
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/50):202.171.253.72:80
+2016-08-04 21:19:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/33):202.171.253.72:80
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):202.171.253.72:80
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/33):202.171.253.72:80
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):202.171.253.72:80
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(28/33):202.171.253.72:80
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/50):202.171.253.72:80
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/33):202.171.253.72:80
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(28/50):202.171.253.72:80
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/50):113.200.214.163:9797
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/33):202.171.253.72:80
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/33):202.171.253.72:80
+2016-08-04 21:19:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(6/50):103.1.48.76:8088
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/50):202.171.253.72:80
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/33):202.171.253.72:80
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/50):202.171.253.72:80
+2016-08-04 21:19:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/50):101.231.250.102:80
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/50):202.171.253.72:80
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:24 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/50):202.171.253.72:80
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/50):202.171.253.72:80
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):202.171.253.72:80
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):202.171.253.72:80
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/50):202.171.253.72:80
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):202.171.253.72:80
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:27 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(9/50):183.89.45.172:8080
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/50):202.78.73.90:8080
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):202.171.253.72:80
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/50):202.171.253.72:80
+2016-08-04 21:19:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/33):33
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(28/50):202.171.253.72:80
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:29 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/50):202.171.253.72:80
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/50):202.171.253.72:80
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/50):202.171.253.72:80
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(13/50):88.157.149.250:8080
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/50):202.171.253.72:80
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(11/50):186.229.25.114:80
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(34/50):202.171.253.72:80
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(36/50):202.171.253.72:80
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(37/50):202.171.253.72:80
+2016-08-04 21:19:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(16/50):182.253.201.77:10000
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/50):202.171.253.72:80
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/50):202.171.253.72:80
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(40/50):202.171.253.72:80
+2016-08-04 21:19:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/50):202.171.253.72:80
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):202.171.253.72:80
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/50):124.133.230.254:80
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):202.171.253.72:80
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/50):202.171.253.72:80
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/50):141.85.220.108:8080
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/50):202.171.253.72:80
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(15/50):202.171.253.72:80
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(16/50):202.171.253.72:80
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/50):213.221.93.243:8080
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/50):202.171.253.72:80
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/50):202.171.253.72:80
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/50):122.96.59.102:83
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/50):63.215.197.42:80
+2016-08-04 21:19:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/50):202.171.253.72:80
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/50):202.171.253.72:80
+2016-08-04 21:19:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/50):123.57.190.51:7777
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/50):202.171.253.72:80
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):202.171.253.72:80
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):202.171.253.72:80
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/50):202.171.253.72:80
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-04 21:19:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):202.171.253.72:80
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:53 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):202.171.253.72:80
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/50):202.171.253.72:80
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(28/50):202.171.253.72:80
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/50):202.171.253.72:80
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/50):202.171.253.72:80
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/50):202.171.253.72:80
+2016-08-04 21:19:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/50):202.171.253.72:80
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(33/50):202.171.253.72:80
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(34/50):202.171.253.72:80
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/50):182.41.26.187:8888
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(35/50):202.171.253.72:80
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:19:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:19:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(36/50):202.171.253.72:80
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(37/50):202.171.253.72:80
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/50):202.171.253.72:80
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/50):202.171.253.72:80
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(40/50):202.171.253.72:80
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:02 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/50):202.171.253.72:80
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):202.171.253.72:80
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):180.183.211.29:8080
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):202.171.253.72:80
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/50):202.171.253.72:80
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(45/50):202.171.253.72:80
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(46/50):202.171.253.72:80
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):121.27.134.201:81
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/50):202.171.253.72:80
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(47/50):202.171.253.72:80
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):182.41.77.59:8080
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):202.171.253.72:80
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/50):123.202.107.86:8088
+2016-08-04 21:20:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):202.171.253.72:80
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):202.171.253.72:80
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/50):202.171.253.72:80
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):122.96.59.106:843
+2016-08-04 21:20:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):202.171.253.72:80
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):202.171.253.72:80
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/50):202.171.253.72:80
+2016-08-04 21:20:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(28/50):202.171.253.72:80
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):122.96.59.106:83
+2016-08-04 21:20:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/50):202.171.253.72:80
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(23/50):120.52.73.32:80
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/50):202.171.253.72:80
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/50):202.171.253.72:80
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/50):202.171.253.72:80
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(50/50):202.171.253.72:80
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(33/50):202.171.253.72:80
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/50):103.250.15.212:8080
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/50):175.106.18.17:80
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(34/50):202.171.253.72:80
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(35/50):202.171.253.72:80
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(36/50):202.171.253.72:80
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(37/50):202.171.253.72:80
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:15 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/50):202.171.253.72:80
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(25/50):122.96.59.102:82
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/50):202.171.253.72:80
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(40/50):202.171.253.72:80
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/50):202.171.253.72:80
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):202.171.253.72:80
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/50):187.155.164.39:8080
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):202.171.253.72:80
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/50):27.193.84.186:81
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/50):202.171.253.72:80
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):218.201.183.19:8080
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(26/50):103.27.24.237:80
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(45/50):202.171.253.72:80
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(46/50):202.171.253.72:80
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:20 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(47/50):202.171.253.72:80
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):202.171.253.72:80
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(49/50):202.171.253.72:80
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(29/50):180.250.32.66:8080
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(50/50):202.171.253.72:80
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/50):39.67.89.187:81
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:27 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/50):116.226.166.2:81
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:20:31 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(32/50):221.10.126.191:2226
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(37/50):125.25.147.18:8080
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/50):27.131.47.132:8080
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(33/50):223.68.1.38:8000
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(31/50):188.164.203.26:80
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(35/50):201.20.176.109:8080
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:40 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(34/50):202.171.253.72:80
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(35/50):202.171.253.72:80
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/50):180.167.27.202:8080
+2016-08-04 21:20:43 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(36/50):202.171.253.72:80
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(37/50):202.171.253.72:80
+2016-08-04 21:20:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/50):202.171.253.72:80
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/50):202.171.253.72:80
+2016-08-04 21:20:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(40/50):202.171.253.72:80
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:46 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/50):202.171.253.72:80
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):202.171.253.72:80
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:47 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/50):92.50.158.22:80
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):202.171.253.72:80
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/50):202.171.253.72:80
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:48 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(45/50):202.171.253.72:80
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(46/50):202.171.253.72:80
+2016-08-04 21:20:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(47/50):202.171.253.72:80
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):110.78.187.100:8080
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/50):113.16.186.245:81
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):202.171.253.72:80
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:50 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(49/50):202.171.253.72:80
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(50/50):202.171.253.72:80
+2016-08-04 21:20:51 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:52 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:53 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:55 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:57 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:20:59 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:00 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:21:01 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):202.171.253.72:80
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/50):202.171.253.72:80
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/50):202.171.253.72:80
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:02 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(45/50):202.171.253.72:80
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:03 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(46/50):202.171.253.72:80
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:21:04 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(47/50):202.171.253.72:80
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):202.171.253.72:80
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(49/50):202.171.253.72:80
+2016-08-04 21:21:05 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(50/50):202.171.253.72:80
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:06 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:21:07 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/50):120.52.73.26:8081
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-04 21:21:09 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):47.88.104.219:80
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:10 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:11 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:12 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:21:13 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(48/50):111.13.136.46:80
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-04 21:21:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:16 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:17 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:18 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-04 21:21:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:19 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:21 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:22 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-04 21:21:24 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:25 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:26 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-04 21:21:28 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:29 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-04 21:21:32 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:33 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-04 21:21:34 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:36 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-04 21:21:37 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:39 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-04 21:21:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:42 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-04 21:21:44 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-04 21:21:45 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-04 21:21:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(50/50):202.171.253.72:80
+2016-08-04 21:21:46 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(1/52):175.106.18.17:80
+2016-08-04 21:21:48 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(2/52):213.221.93.243:8080
+2016-08-04 21:21:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(3/52):63.215.197.42:80
+2016-08-04 21:21:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(4/52):180.183.211.29:8080
+2016-08-04 21:21:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(5/52):122.96.59.102:83
+2016-08-04 21:21:54 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(6/52):6
+2016-08-04 21:21:55 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(7/52):180.250.32.66:8080
+2016-08-04 21:21:56 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(8/52):120.52.73.32:80
+2016-08-04 21:21:56 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(9/52):9
+2016-08-04 21:21:56 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(10/52):202.100.167.144:80
+2016-08-04 21:21:58 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(11/52):141.85.220.108:8080
+2016-08-04 21:22:01 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(12/52):12
+2016-08-04 21:22:02 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(13/52):182.38.214.10:8888
+2016-08-04 21:22:03 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(14/52):101.201.235.141:8000
+2016-08-04 21:22:04 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(15/52):111.13.136.46:80
+2016-08-04 21:22:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(16/52):223.68.1.38:8000
+2016-08-04 21:22:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(17/52):88.157.149.250:8080
+2016-08-04 21:22:08 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(18/52):202.171.253.72:80
+2016-08-04 21:22:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(19/52):183.89.45.172:8080
+2016-08-04 21:22:09 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(20/52):103.27.24.237:80
+2016-08-04 21:22:10 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(21/52):113.16.186.245:81
+2016-08-04 21:22:12 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(22/52):124.133.230.254:80
+2016-08-04 21:22:15 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(23/52):23
+2016-08-04 21:22:17 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(24/52):45.62.246.212:8080
+2016-08-04 21:22:20 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(25/52):25
+2016-08-04 21:22:23 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(26/52):26
+2016-08-04 21:22:24 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(27/52):27.193.84.186:81
+2016-08-04 21:22:27 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(28/52):28
+2016-08-04 21:22:30 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(29/52):29
+2016-08-04 21:22:31 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(30/52):122.96.59.106:83
+2016-08-04 21:22:35 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(31/52):31
+2016-08-04 21:22:38 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(32/52):32
+2016-08-04 21:22:41 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(33/52):33
+2016-08-04 21:22:43 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(34/52):113.200.214.163:9797
+2016-08-04 21:22:45 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(35/52):123.57.190.51:7777
+2016-08-04 21:22:46 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(36/52):39.67.92.84:81
+2016-08-04 21:22:49 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(37/52):37
+2016-08-04 21:22:49 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(38/52):110.78.187.100:8080
+2016-08-04 21:22:50 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(39/52):92.50.158.22:80
+2016-08-04 21:22:51 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(40/52):187.155.164.39:8080
+2016-08-04 21:22:52 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(41/52):186.229.25.114:80
+2016-08-04 21:22:53 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(42/52):122.96.59.106:843
+2016-08-04 21:22:54 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(43/52):202.78.73.90:8080
+2016-08-04 21:22:54 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(44/52):47.88.104.219:80
+2016-08-04 21:22:55 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(45/52):120.52.73.26:8081
+2016-08-04 21:22:58 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(46/52):46
+2016-08-04 21:23:00 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(47/52):121.27.134.201:81
+2016-08-04 21:23:04 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(48/52):48
+2016-08-04 21:23:05 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(49/52):125.25.147.18:8080
+2016-08-04 21:23:08 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(50/52):50
+2016-08-04 21:23:11 [yellowpage.fetch_free_proxyes] INFO: +++Check Success(51/52):101.231.250.102:80
+2016-08-04 21:23:14 [yellowpage.fetch_free_proxyes] INFO: ---Check Failure(52/52):52
+2016-08-04 21:23:14 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:43: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('*******current proxy is:{0}'.format(proxy))
+
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:180.183.211.29:8080
+2016-08-04 21:23:14 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:24: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('Current UserAgent: ' + ua, level=log.INFO)
+
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5
+2016-08-04 21:23:14 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:180.250.32.66:8080
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:124.133.230.254:80
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:92.50.158.22:80
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:39.67.92.84:81
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:101.201.235.141:8000
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:213.221.93.243:8080
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:101.231.250.102:80
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:120.52.73.26:8081
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:223.68.1.38:8000
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:175.106.18.17:80
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:182.38.214.10:8888
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:124.133.230.254:80
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:110.78.187.100:8080
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:123.57.190.51:7777
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-04 21:23:14 [scrapy] INFO: *******current proxy is:101.201.235.141:8000
+2016-08-04 21:23:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-04 21:23:16 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=arcades&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:16 [scrapy] INFO: *******current proxy is:202.78.73.90:8080
+2016-08-04 21:23:16 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-04 21:23:16 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=arcades&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:19 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=galleries&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:19 [scrapy] INFO: *******current proxy is:183.89.45.172:8080
+2016-08-04 21:23:19 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5
+2016-08-04 21:23:19 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=galleries&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:20 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=casinos&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:20 [scrapy] INFO: *******current proxy is:88.157.149.250:8080
+2016-08-04 21:23:20 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-04 21:23:21 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=casinos&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:21 [scrapy] DEBUG: Crawled (404) <GET http://www.yellowpages.com/search?search_terms=movietheaters&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:21 [scrapy] INFO: *******current proxy is:121.27.134.201:81
+2016-08-04 21:23:21 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-04 21:23:22 [scrapy] DEBUG: Ignoring response <404 http://www.yellowpages.com/search?search_terms=movietheaters&geo_location_terms=Aberdeen%2C+WA>: HTTP status code is not handled or not allowed
+2016-08-04 21:23:28 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=countryclubs&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:28 [py.warnings] WARNING: /home/jason/workspace/yellowpage/yellowpage/middlewares.py:41: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('*******current proxy is:local', level=log.INFO)
+
+2016-08-04 21:23:28 [scrapy] INFO: *******current proxy is:local
+2016-08-04 21:23:28 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1
+2016-08-04 21:23:28 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=countryclubs&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:28 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=culturalcenter&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:28 [scrapy] INFO: *******current proxy is:180.250.32.66:8080
+2016-08-04 21:23:28 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-04 21:23:28 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=culturalcenter&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:34 [scrapy] DEBUG: Crawled (404) <GET http://www.yellowpages.com/search?search_terms=jazzandblues&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:35 [scrapy] INFO: *******current proxy is:122.96.59.106:83
+2016-08-04 21:23:35 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-04 21:23:35 [scrapy] DEBUG: Ignoring response <404 http://www.yellowpages.com/search?search_terms=jazzandblues&geo_location_terms=Aberdeen%2C+WA>: HTTP status code is not handled or not allowed
+2016-08-04 21:23:36 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=festivals&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:36 [scrapy] INFO: *******current proxy is:110.78.187.100:8080
+2016-08-04 21:23:36 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-04 21:23:36 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=festivals&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:36 [scrapy] DEBUG: Crawled (200) <GET http://www.yellowpages.com/search?search_terms=museums&geo_location_terms=Aberdeen%2C+WA> (referer: None) ['partial']
+2016-08-04 21:23:36 [scrapy] INFO: *******current proxy is:122.96.59.102:83
+2016-08-04 21:23:36 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-04 21:23:36 [scrapy] ERROR: Spider error processing <GET http://www.yellowpages.com/search?search_terms=museums&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/home/jason/workspace/yellowpage/yellowpage/spiders/yellowpagespider.py", line 33, in parse
+    print response.url
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2016-08-04 21:23:40 [scrapy] DEBUG: Crawled (404) <GET http://www.yellowpages.com/search?search_terms=paintandsip&geo_location_terms=Aberdeen%2C+WA> (referer: None)
+2016-08-04 21:23:40 [scrapy] INFO: *******current proxy is:101.231.250.102:80
+2016-08-04 21:23:40 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1
+2016-08-04 21:23:40 [scrapy] DEBUG: Ignoring response <404 http://www.yellowpages.com/search?search_terms=paintandsip&geo_location_terms=Aberdeen%2C+WA>: HTTP status code is not handled or not allowed
